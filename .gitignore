@@ -1,0 +1,94 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/
+.next/
+.turbo/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.prod
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+
+# Testing
+coverage/
+.nyc_output/
+test-results/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary
+tmp/
+temp/
+.cache/
+
+# Docker
+docker-compose.override.yml
+
+# AWS
+.aws-sam/
+samconfig.toml
+
+# Kubernetes
+.kube/
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate*
+tfvars/
+
+# Generated files
+generated/
+__generated__/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+ENV/
+.venv
+
+# Documentation generated
+site/
+.docs/
+
+# API docs
+swagger-ui/
+openapi/
+
+# Deployment
+deploy/
+releases/
+artifacts/
