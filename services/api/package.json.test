@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./test/jest-e2e.config.js",
+    "test:e2e:watch": "jest --config ./test/jest-e2e.config.js --watch",
+    "test:all": "npm run test && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "^10.x",
+    "@types/jest": "^29.x",
+    "@types/supertest": "^2.x",
+    "jest": "^29.x",
+    "supertest": "^6.x",
+    "ts-jest": "^29.x",
+    "ts-loader": "^9.x"
+  }
+}
