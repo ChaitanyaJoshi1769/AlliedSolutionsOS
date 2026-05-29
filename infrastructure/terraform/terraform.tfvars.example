@@ -1,0 +1,15 @@
+aws_region          = "us-east-1"
+environment         = "production"
+vpc_cidr            = "10.0.0.0/16"
+kubernetes_version  = "1.28"
+node_instance_type  = "t3.xlarge"
+node_desired_size   = 3
+node_max_size       = 10
+node_min_size       = 3
+db_instance_class   = "db.r6g.xlarge"
+redis_node_type     = "cache.r7g.xlarge"
+neo4j_instance_type = "r5.2xlarge"
+
+# IMPORTANT: Set these via environment variables or secret files
+# db_password         = "YOUR_SECURE_PASSWORD_HERE"
+# db_username         = "postgres"
