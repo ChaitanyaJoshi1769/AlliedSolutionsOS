@@ -1,1 +1,13 @@
-import { Module } from '@nestjs/common'; @Module({ controllers: [], providers: [], exports: [] }) export class IntegrationsModule {}
+import { Module } from '@nestjs/common';
+import { HttpModule } from '@nestjs/axios';
+import { ConfigModule } from '@nestjs/config';
+import { IntegrationsService } from './integrations.service';
+import { IntegrationsController } from './integrations.controller';
+
+@Module({
+  imports: [HttpModule, ConfigModule],
+  providers: [IntegrationsService],
+  controllers: [IntegrationsController],
+  exports: [IntegrationsService],
+})
+export class IntegrationsModule {}

@@ -1,1 +1,12 @@
-import { Module } from '@nestjs/common'; @Module({ controllers: [], providers: [], exports: [] }) export class ComplianceModule {}
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { ComplianceService } from './compliance.service';
+import { ComplianceController } from './compliance.controller';
+
+@Module({
+  imports: [TypeOrmModule.forFeature([])],
+  providers: [ComplianceService],
+  controllers: [ComplianceController],
+  exports: [ComplianceService],
+})
+export class ComplianceModule {}
